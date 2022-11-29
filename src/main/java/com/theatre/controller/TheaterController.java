@@ -275,20 +275,21 @@ public class TheaterController {
 	
 	//	perfoming get operation to get the details of the theater using address field.
 	@GetMapping("searchByAddress/{input}")
-    public  ResponseEntity<List<Theater>>GETTHEATERBYADDRESS(@PathVariable("input") String input) {
+    public  ResponseEntity<List<Theater>>GETTHEATERBYADDRESS(@PathVariable("input") String input)throws NoContentException {
 //    fetching the list of theaters using the theater field
-	List<Theater> theaters = theaterService.getByAddress(input);
-    ResponseEntity<List<Theater>> responseEntity;
-//    checking whether the theater is empty or not.
-    if(theaters.isEmpty()) {
-//    	if theater is empty returns null
-            responseEntity = new ResponseEntity<List<Theater>>(theaters, HttpStatus.NO_CONTENT);
-        }
-        else
-        {
-//        	if theater is not empty then returns the requiered list of theatres.
-            responseEntity = new ResponseEntity<List<Theater>>(theaters, HttpStatus.OK);
-        }
-        return responseEntity;
-        }
+		ResponseEntity<List<Theater>> responseEntity;
+		try{
+			responseEntity = new ResponseEntity<List<Theater>>(theaterService.getByAddress(input), HttpStatus.OK);
+			theaterLogger.info("Successful Retrieval of Theater Address",responseEntity);			
+		}
+		catch (NoContentException e) {
+			responseEntity = new ResponseEntity(e.getCode()+" : "+e.getMessage(),HttpStatus.BAD_REQUEST);
+			theaterLogger.error(e.getCode()+" : "+e.getMessage(),responseEntity);
+		}
+		catch (Exception e) {
+			responseEntity = new ResponseEntity(e.getMessage(),HttpStatus.METHOD_FAILURE);
+			theaterLogger.error(e.getMessage(),responseEntity);
+		}
+		return responseEntity;
+	}
 }

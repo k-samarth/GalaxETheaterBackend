@@ -22,6 +22,6 @@ public interface TheaterService {
 	public List<Theater> getByCity(String city);
 	public Row findByRowname(String name);
 	public Theater findByname(String name);
-	public List<Theater> getByAddress(String input);
+	public List<Theater> getByAddress(String input)throws NoContentException;
 	
 }
