@@ -16,6 +16,7 @@ import com.theatre.entity.SeatBooking;
 import com.theatre.entity.Theater;
 import com.theatre.exception.NoContentException;
 import com.theatre.exception.UserAlreadyExistException;
+import com.theatre.exception.UserNotFoundException;
 import com.theatre.repository.AddressRepository;
 import com.theatre.repository.RowRepository;
 import com.theatre.repository.TheaterRepository;
@@ -85,6 +86,74 @@ public class TheaterServiceImpl implements TheaterService{
 			return message;
 		}		
 	}
+
+	@Override
+	public String updateTheater(Theater theater) {
+
+		Theater theaterdetails = findByname(theater.getName());
+		int id = theaterdetails.getId();
+		Address address = theaterdetails.getAddress();
+		theater.setId(theaterdetails.getId());
+		Address add = theater.getAddress();
+		List<Row> rowcontainer = theater.getRow();
+		add.setId(address.getId());
+		List<Row> row = theaterdetails.getRow();
+		List<Row> rowone = new ArrayList<Row>();
+		for (int i = 0; i < row.size(); i++) {
+			Row rowi = row.get(i);
+			Row rowj = rowcontainer.get(i);
+			if (rowi.getSeats() != null) {
+				List<Seat> seati = new ArrayList<Seat>();
+				seati = rowi.getSeats();
+				int totalseats = rowj.getTotalSeats();
+				List<Seat> listofseats = new ArrayList<Seat>();
+				for (int k = 0; k < totalseats; k++) {
+					Seat seat = new Seat();
+					seat.setBooking(SeatBooking.NOTBOOKED);
+					listofseats.add(seat);
+				}
+
+				rowj.setSeats(listofseats);
+				rowcontainer.add(rowj);
+				List<Seat> seatj = new ArrayList<Seat>();
+				seatj = rowj.getSeats();
+				for (int j = 0; j < seati.size(); j++) {
+					if (seati.get(j) != null && seati.get(j) != null) {
+
+						Seat IndividualSeatj = seatj.get(j);
+						Seat IndividualSeati = seati.get(j);
+						IndividualSeatj.setId(IndividualSeati.getId());
+						System.out.print(IndividualSeatj);
+						System.out.print(IndividualSeati);
+					}
+					rowj.setSeats(seatj);
+					rowj.setId(rowi.getId());
+				}
+			}
+			rowone.add(rowj);
+		}
+		theater.setRow(rowone);
+		theater.setId(theaterdetails.getId());
+		theaterRepository.save(theater);
+		return "Updated Successfully";
+	}
+
+	public String validateAndUpdateTheater(Theater theater) throws UserNotFoundException {
+		/*
+		 * Pseudo Code 1. Find all the theaters by Name 2. See if we have any rows with
+		 * same name already in Database 3. If yes throw error saying User Already
+		 * Exists 4. Else Send the data to saveTheater and return the message
+		 */
+		Theater theaterdetails = findByname(theater.getName());
+
+		if (theaterdetails == null) {
+			throw new UserNotFoundException("User Not Found", "DB0005");
+		} else {
+			String message = updateTheater(theater);
+			return message;
+		}
+	}
+
 	
 //	checking whether the theatre id exists or not.
 	@Override
@@ -114,13 +183,7 @@ public class TheaterServiceImpl implements TheaterService{
 		}
 	}
   
-//    performing operation to peform  update theatres.
-    @Override
-	public String updateTheater(Theater theater) {
-//		 performing saving operation
-	    theaterRepository.save(theater);
-		return "Updated Successfully";
-	}
+
      
 //   performing operation to perform  delete theaters.
 	@Override
@@ -131,11 +194,16 @@ public class TheaterServiceImpl implements TheaterService{
 	}
 
 //	performing operation to get theaters with that particular city.
-	@Override
-	public List<Theater> getByCity(String city) {
+@Override
+public List<Theater> getByCity(String city) throws NoContentException {
 //		return list of theaters in that particular city from the database
-		return theaterRepository.findByCity(city);
+	List<Theater> theaters = theaterRepository.findByCity(city);
+	if (theaters.isEmpty()) {
+		throw new NoContentException("All theaters are currently unavailable", "DB001");
+	} else {
+		return theaters;
 	}
+}
 
 //	perform operation to get the row with that name.
 	@Override
