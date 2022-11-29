@@ -251,24 +251,27 @@ public class TheaterController {
 	//	performing get theater by name
 	@GetMapping("name/{name}")
 
-	public List<Theater> GETBY(@PathVariable("name") String name) {
-//		creating a list to add the theater into theater details.
-		List<Theater> theaterdetail = new ArrayList<Theater>(); 
-		ResponseEntity<List<Theater>> responseEntity;
-//		fetching the theater details using theater name.
-		
-		 theaterdetail.add(theaterService.findByname(name));
-//		 checking whether the theater is empty or not.
-		 if(theaterdetail.isEmpty()) {
-//				if theater is empty returns null
-			 responseEntity= new ResponseEntity<List<Theater>>(theaterdetail,HttpStatus.NO_CONTENT);
-		 }
-		 else {
-//				if theater is not empty then returns the requiered list of theaters.
-			 responseEntity= new ResponseEntity<List<Theater>>(theaterdetail,HttpStatus.OK);
-		 }
-		 return theaterdetail;
-	}
+
+
+	   public ResponseEntity<Theater> GETBY(@PathVariable("name") String name) {
+	        
+	        ResponseEntity<Theater> responseEntity;
+	        try{
+	            responseEntity = new ResponseEntity<Theater>(theaterService.validateAndFind(name), HttpStatus.OK);
+	            theaterLogger.info("Successful Retrieval of Theater Details",responseEntity);            
+	        }
+	        catch (NoContentException e) {
+	            responseEntity = new ResponseEntity(e.getCode()+" : "+e.getMessage(),HttpStatus.BAD_REQUEST);
+	            theaterLogger.error(e.getCode()+" : "+e.getMessage(),responseEntity);
+	        }
+	        catch (Exception e) {
+	            responseEntity = new ResponseEntity(e.getMessage(),HttpStatus.METHOD_FAILURE);
+	            theaterLogger.error(e.getMessage(),responseEntity);
+	        }
+	        return responseEntity;
+	        
+	    
+	    }
 	
 
 	

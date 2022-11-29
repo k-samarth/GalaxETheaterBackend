@@ -23,5 +23,6 @@ public interface TheaterService {
 	public Row findByRowname(String name);
 	public Theater findByname(String name);
 	public List<Theater> getByAddress(String input)throws NoContentException;
+	public Theater validateAndFind(String name) throws NoContentException;
 	
 }

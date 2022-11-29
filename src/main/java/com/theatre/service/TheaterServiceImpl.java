@@ -149,7 +149,18 @@ public class TheaterServiceImpl implements TheaterService{
 //		returns the theater details with that theatre name
 		return theaterRepository.findByName(name);
 	}
-	
+public Theater validateAndFind(String name) throws NoContentException {
+        
+        Theater theaterDetails = findByname(name);
+        if(theaterDetails == null) {
+            throw new NoContentException("No theater available","DB000");
+     }
+        else {
+            return theaterDetails;
+        }
+        
+        
+    }
 //performing operation to get theatre details with particular address field.
     @Override
 	public List<Theater> getByAddress(String input) throws NoContentException {
