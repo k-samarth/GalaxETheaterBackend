@@ -120,9 +120,19 @@ public class TheaterController {
 	 * Call : 
 	 *  	POST : "http://localhost:9090/theater/update"
 	*/
+	
 	@PutMapping("/update")
     public ResponseEntity<String> UPDATE(@RequestBody Theater theater) {
-        ResponseEntity<String> responseEntity;
+        
+		/*
+		 * 	Pseudo Code
+		 * 		1. Create Response Entity Object
+		 * 		2. Try saving theaters through Service Implementation
+		 * 		3. if Successful send proper response with response code
+		 * 		4. Catch and send proper Response Code																					
+		 */
+		
+		ResponseEntity<String> responseEntity;
 //        find the theater with the name given by the user
         Theater theaterdetails = theaterService.findByname(theater.getName());
         int id = theaterdetails.getId();
