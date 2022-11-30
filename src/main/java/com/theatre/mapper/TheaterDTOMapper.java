@@ -18,5 +18,5 @@ public interface TheaterDTOMapper {
 	@Mapping(target = "name", source = "name")
 	@Mapping(target = "imgUrl", source = "imgUrl")
 	@Mapping(target = "address", source = "address")
-	public Theater convertToEntity(TheaterDTO theater);
+	public Theater convertToEntity(TheaterDTO theaterDto);
 }
