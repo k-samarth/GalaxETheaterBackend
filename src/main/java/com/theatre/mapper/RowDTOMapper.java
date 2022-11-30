@@ -9,10 +9,10 @@ import com.theatre.entity.Row;
 @Mapper
 public interface RowDTOMapper {
 
-	@Mapping(source="code",target="row.code")
-	@Mapping(source="name",target="row.name")
-	@Mapping(source="price",target="row.price")
-	@Mapping(source="seatType",target="row.seatType")
+	@Mapping(source="code",target="code")
+	@Mapping(source="name",target="name")
+	@Mapping(source="price",target="price")
+	@Mapping(source="seatType",target="seatType")
 	public RowDTO convertToDto(Row row);
 	
 	@Mapping(source="code",target="code")

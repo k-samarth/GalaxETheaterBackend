@@ -46,7 +46,7 @@ public class TheaterController {
 	
 
 //	Logger SetUp
-	private static Logger theaterLogger = Logger.getLogger(TheaterController.class);
+//	private static Logger theaterLogger = Logger.getLogger(TheaterController.class);
 
 	
 	/*
@@ -68,15 +68,15 @@ public class TheaterController {
 		ResponseEntity<List<Theater>> responseEntity;
 		try{
 			responseEntity = new ResponseEntity<List<Theater>>(theaterService.getTheaters(), HttpStatus.OK);
-			theaterLogger.info("Successful Retrieval of Theater Details");			
+//			theaterLogger.info("Successful Retrieval of Theater Details");			
 		}
 		catch (NoContentException e) {
 			responseEntity = new ResponseEntity(e.getCode()+" : "+e.getMessage(),HttpStatus.BAD_REQUEST);
-			theaterLogger.info(e.getCode()+" : "+e.getMessage());
+//			theaterLogger.info(e.getCode()+" : "+e.getMessage());
 		}
 		catch (Exception e) {
 			responseEntity = new ResponseEntity(e.getMessage(),HttpStatus.METHOD_FAILURE);
-			theaterLogger.info(e.getMessage());
+//			theaterLogger.info(e.getMessage());
 		}
 		return responseEntity;
 	}       
@@ -103,15 +103,15 @@ public class TheaterController {
 
 		try {
 			responseEntity = new ResponseEntity<String>(theaterService.validateAndSaveTheater(theater),HttpStatus.OK);
-			theaterLogger.info("Theater Data has been successfully stored");
+//			theaterLogger.info("Theater Data has been successfully stored");
 		}
 		catch (UserAlreadyExistException e) {
 			responseEntity = new ResponseEntity<String>(e.getCode()+" : "+e.getMessage(), HttpStatus.OK);
-			theaterLogger.info(e.getCode()+" : "+e.getMessage());
+			//theaterLogger.info(e.getCode()+" : "+e.getMessage());
 		}
 		catch (Exception e) {
 			responseEntity = new ResponseEntity(e.getMessage(),HttpStatus.METHOD_FAILURE);
-			theaterLogger.error(e.getMessage());
+			//theaterLogger.error(e.getMessage());
 		}
 		return responseEntity;
 	}
@@ -128,17 +128,17 @@ public ResponseEntity<String> UPDATE(@RequestBody Theater theater) {
 	    ResponseEntity<String> responseEntity;	
 		try {
 			responseEntity = new ResponseEntity<String>(theaterService.validateAndUpdateTheater(theater),HttpStatus.OK);
-			theaterLogger.info("Theater Data has been successfully stored");
+			//theaterLogger.info("Theater Data has been successfully stored");
 			}
 		catch (UserNotFoundException e) 
 			{
 			responseEntity = new ResponseEntity<String>(e.getCode()+" : "+e.getMessage(), HttpStatus.OK);
-			theaterLogger.error(e.getCode()+" : "+e.getMessage());
+			//theaterLogger.error(e.getCode()+" : "+e.getMessage());
 			}
 		catch (Exception e) 
 			{
 			responseEntity = new ResponseEntity(e.getMessage(),HttpStatus.METHOD_FAILURE);
-			theaterLogger.error(e.getMessage());
+			//theaterLogger.error(e.getMessage());
 			}
 	    return responseEntity;
 }
@@ -182,15 +182,15 @@ public ResponseEntity<?> GETBYCITY(@PathVariable("city") String city) {
 	try {
 		theatres = theaterService.getByCity(city);
 		responseEntity = new ResponseEntity<List<Theater>>(theatres, HttpStatus.OK);
-		theaterLogger.info("Theater Data has been successfully displayed");
+		//theaterLogger.info("Theater Data has been successfully displayed");
 		}
 	catch(NoContentException e) {
 		responseEntity = new ResponseEntity<String>(e.getCode()+":"+e.getMessage(), HttpStatus.BAD_REQUEST);
-		 theaterLogger.error(e.getCode()+" : "+e.getMessage());
+		 //theaterLogger.error(e.getCode()+" : "+e.getMessage());
 		 }
 	catch (Exception e) {
 		responseEntity = new ResponseEntity(e.getMessage(),HttpStatus.METHOD_FAILURE);
-		theaterLogger.error(e.getMessage());
+		//theaterLogger.error(e.getMessage());
 		}
 	return responseEntity;
 }
@@ -207,15 +207,15 @@ public ResponseEntity<?> GETBYCITY(@PathVariable("city") String city) {
 	        ResponseEntity<Theater> responseEntity;
 	        try{
 	            responseEntity = new ResponseEntity<Theater>(theaterService.validateAndFind(name), HttpStatus.OK);
-	            theaterLogger.info("Successful Retrieval of Theater Details");            
+	            //theaterLogger.info("Successful Retrieval of Theater Details");            
 	        }
 	        catch (NoContentException e) {
 	            responseEntity = new ResponseEntity(e.getCode()+" : "+e.getMessage(),HttpStatus.BAD_REQUEST);
-	            theaterLogger.error(e.getCode()+" : "+e.getMessage());
+	            //theaterLogger.error(e.getCode()+" : "+e.getMessage());
 	        }
 	        catch (Exception e) {
 	            responseEntity = new ResponseEntity(e.getMessage(),HttpStatus.METHOD_FAILURE);
-	            theaterLogger.error(e.getMessage());
+	            //theaterLogger.error(e.getMessage());
 	        }
 	        return responseEntity;
 	        
@@ -232,15 +232,15 @@ public ResponseEntity<?> GETBYCITY(@PathVariable("city") String city) {
 		ResponseEntity<List<Theater>> responseEntity;
 		try{
 			responseEntity = new ResponseEntity<List<Theater>>(theaterService.getByAddress(input), HttpStatus.OK);
-			theaterLogger.info("Successful Retrieval of Theater Address");			
+			//theaterLogger.info("Successful Retrieval of Theater Address");			
 		}
 		catch (NoContentException e) {
 			responseEntity = new ResponseEntity(e.getCode()+" : "+e.getMessage(),HttpStatus.BAD_REQUEST);
-			theaterLogger.error(e.getCode()+" : "+e.getMessage());
+			//theaterLogger.error(e.getCode()+" : "+e.getMessage());
 		}
 		catch (Exception e) {
 			responseEntity = new ResponseEntity(e.getMessage(),HttpStatus.METHOD_FAILURE);
-			theaterLogger.error(e.getMessage());
+			//theaterLogger.error(e.getMessage());
 		}
 		return responseEntity;
 	}
