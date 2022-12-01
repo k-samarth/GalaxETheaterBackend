@@ -10,12 +10,12 @@ import com.theatre.entity.Address;
 @Mapper
 public interface AddressDTOMapper {
 
-	@Mapping(target = "city", source = "address.city")
-	@Mapping(target = "state", source = "address.state")
-	@Mapping(target = "country", source = "address.country")
-	@Mapping(target = "pincode", source = "address.pincode")
-	@Mapping(target = "addressLine1", source = "address.addressLine1")
-	@Mapping(target = "addressLine2", source = "address.addressLine2")
+	@Mapping(target = "city", source = "city")
+	@Mapping(target = "state", source = "state")
+	@Mapping(target = "country", source = "country")
+	@Mapping(target = "pincode", source = "pincode")
+	@Mapping(target = "addressLine1", source = "addressLine1")
+	@Mapping(target = "addressLine2", source = "addressLine2")
 	public AddressDTO convertToDto(Address address);
 	
 	@Mapping(target = "city", source = "city")

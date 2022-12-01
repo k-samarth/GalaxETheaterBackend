@@ -202,11 +202,14 @@ public ResponseEntity<?> GETBYCITY(@PathVariable("city") String city) {
 
 
 
-	   public ResponseEntity<Theater> GETBY(@PathVariable("name") String name) {
+	   public ResponseEntity<List<Theater>> GETBY(@PathVariable("name") String name) {
 	        
-	        ResponseEntity<Theater> responseEntity;
+			List<Theater> theaterServiceTheaters = new ArrayList<Theater>();
+	        ResponseEntity<List<Theater>> responseEntity;
 	        try{
-	            responseEntity = new ResponseEntity<Theater>(theaterService.validateAndFind(name), HttpStatus.OK);
+	        	Theater theater_i = theaterService.validateAndFind(name);
+	        	theaterServiceTheaters.add(theater_i);	            
+	        	responseEntity = new ResponseEntity<List<Theater>>(theaterServiceTheaters, HttpStatus.OK);
 	            //theaterLogger.info("Successful Retrieval of Theater Details");            
 	        }
 	        catch (NoContentException e) {
