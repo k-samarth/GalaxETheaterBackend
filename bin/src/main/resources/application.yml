@@ -1,0 +1,10 @@
+server:
+  port: 8091
+  servlet:
+    context-path: /theater
+    
+spring:
+  application:
+    name: theater-service
+  profiles:
+    active: dev
