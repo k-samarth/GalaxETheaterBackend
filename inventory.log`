@@ -248,3 +248,773 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
 	... 38 common frames omitted
+2022-12-06 16:04:42,639 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 16:04:42,641 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 16:04:42,723 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-06 16:04:42,725 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-06 16:04:44,124 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 16:04:44,204 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 3 JPA repository interfaces.
+2022-12-06 16:04:45,173 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 16:04:45,187 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 16:04:45,188 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 16:04:45,328 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 16:04:45,328 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2602 ms
+2022-12-06 16:04:45,566 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 16:04:45,647 INFO  [restartedMain] org.hibernate.Version : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-06 16:04:45,813 INFO  [restartedMain] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-06 16:04:45,948 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2022-12-06 16:04:49,869 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2022-12-06 16:04:49,930 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 16:04:54,687 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 16:04:54,725 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 16:04:55,557 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 16:04:56,106 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 16:04:56,178 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 16:04:56,198 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 14.283 seconds (JVM running for 16.602)
+2022-12-06 16:46:28,759 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m41s993ms955µs700ns).
+2022-12-06 16:57:06,352 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m7s442ms580µs400ns).
+2022-12-06 17:00:29,172 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:00:29,561 INFO  [Thread-5] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:00:29,658 INFO  [Thread-5] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:00:29,716 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2022-12-06 17:00:29,752 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2022-12-06 17:00:30,177 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:00:30,178 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:00:31,467 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:00:31,489 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:00:31,586 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:00:31,587 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:00:31,587 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:00:31,607 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:00:31,608 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1427 ms
+2022-12-06 17:00:31,663 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:00:31,670 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Starting...
+2022-12-06 17:00:34,874 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Start completed.
+2022-12-06 17:00:34,875 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:00:38,404 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:00:38,405 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:00:38,578 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:00:38,717 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:00:38,738 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:00:38,748 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 8.624 seconds (JVM running for 3362.732)
+2022-12-06 17:00:38,751 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:03:43,725 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:03:43,966 INFO  [Thread-7] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:03:43,978 INFO  [Thread-7] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:03:43,980 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Shutdown initiated...
+2022-12-06 17:03:43,991 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource : HikariPool-2 - Shutdown completed.
+2022-12-06 17:03:44,146 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:03:44,147 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:03:44,402 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:03:44,424 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:03:44,512 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:03:44,513 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:03:44,513 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:03:44,543 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:03:44,544 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 395 ms
+2022-12-06 17:03:44,573 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:03:44,580 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Starting...
+2022-12-06 17:03:47,804 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Start completed.
+2022-12-06 17:03:47,806 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:03:51,340 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:03:51,341 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:03:51,548 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:03:51,662 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:03:51,676 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:03:51,684 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 7.642 seconds (JVM running for 3555.668)
+2022-12-06 17:03:51,687 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:03:53,112 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:03:53,386 INFO  [Thread-11] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:03:53,393 INFO  [Thread-11] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:03:53,395 INFO  [Thread-11] com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Shutdown initiated...
+2022-12-06 17:03:55,404 INFO  [Thread-11] com.zaxxer.hikari.HikariDataSource : HikariPool-3 - Shutdown completed.
+2022-12-06 17:03:55,476 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:03:55,477 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:03:56,769 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:03:56,797 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:03:56,908 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:03:56,910 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:03:56,910 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:03:56,947 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:03:56,947 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1467 ms
+2022-12-06 17:03:56,991 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:03:56,996 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-4 - Starting...
+2022-12-06 17:03:59,951 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-4 - Start completed.
+2022-12-06 17:03:59,952 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:04:03,438 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:04:03,439 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:04:03,600 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:04:03,733 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:04:03,754 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:04:03,762 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 8.318 seconds (JVM running for 3567.746)
+2022-12-06 17:04:03,765 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:04:05,192 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:04:05,516 INFO  [Thread-15] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:04:05,550 INFO  [Thread-15] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:04:05,553 INFO  [Thread-15] com.zaxxer.hikari.HikariDataSource : HikariPool-4 - Shutdown initiated...
+2022-12-06 17:04:07,602 INFO  [Thread-15] com.zaxxer.hikari.HikariDataSource : HikariPool-4 - Shutdown completed.
+2022-12-06 17:04:07,716 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:04:07,717 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:04:07,896 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:04:07,910 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:04:07,989 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:04:07,989 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:04:07,990 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:04:08,005 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:04:08,005 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 284 ms
+2022-12-06 17:04:08,061 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:04:08,065 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-5 - Starting...
+2022-12-06 17:04:11,043 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-5 - Start completed.
+2022-12-06 17:04:11,044 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:04:14,533 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:04:14,534 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:04:14,730 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:04:14,829 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:04:14,846 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:04:14,855 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 7.185 seconds (JVM running for 3578.839)
+2022-12-06 17:04:14,857 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:04:16,282 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:04:16,627 INFO  [Thread-19] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:04:16,646 INFO  [Thread-19] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:04:16,649 INFO  [Thread-19] com.zaxxer.hikari.HikariDataSource : HikariPool-5 - Shutdown initiated...
+2022-12-06 17:04:18,894 INFO  [Thread-19] com.zaxxer.hikari.HikariDataSource : HikariPool-5 - Shutdown completed.
+2022-12-06 17:04:18,973 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:04:18,974 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:04:19,187 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:04:19,204 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:04:19,265 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:04:19,265 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:04:19,266 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:04:19,287 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:04:19,287 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 310 ms
+2022-12-06 17:04:19,334 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:04:19,341 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-6 - Starting...
+2022-12-06 17:04:22,298 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-6 - Start completed.
+2022-12-06 17:04:22,299 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:04:25,923 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:04:25,924 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:04:26,172 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:04:26,317 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:04:26,336 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:04:26,344 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 7.399 seconds (JVM running for 3590.328)
+2022-12-06 17:04:26,347 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:04:54,397 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:04:54,841 INFO  [Thread-23] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:04:54,859 INFO  [Thread-23] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:04:54,861 INFO  [Thread-23] com.zaxxer.hikari.HikariDataSource : HikariPool-6 - Shutdown initiated...
+2022-12-06 17:04:54,882 INFO  [Thread-23] com.zaxxer.hikari.HikariDataSource : HikariPool-6 - Shutdown completed.
+2022-12-06 17:04:54,988 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:04:54,989 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:04:55,213 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:04:55,241 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:04:55,359 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:04:55,360 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:04:55,360 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:04:55,386 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:04:55,386 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 395 ms
+2022-12-06 17:04:55,432 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:04:55,441 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-7 - Starting...
+2022-12-06 17:04:58,607 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-7 - Start completed.
+2022-12-06 17:04:58,607 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:05:02,050 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:05:02,051 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:05:02,215 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:05:02,276 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:05:02,285 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:05:02,288 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 7.343 seconds (JVM running for 3626.273)
+2022-12-06 17:05:02,290 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:05:07,822 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:05:08,150 INFO  [Thread-27] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:05:08,166 INFO  [Thread-27] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:05:08,167 INFO  [Thread-27] com.zaxxer.hikari.HikariDataSource : HikariPool-7 - Shutdown initiated...
+2022-12-06 17:05:08,699 INFO  [Thread-27] com.zaxxer.hikari.HikariDataSource : HikariPool-7 - Shutdown completed.
+2022-12-06 17:05:08,809 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:05:08,810 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:05:08,996 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:05:09,017 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:05:09,131 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:05:09,132 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:05:09,132 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:05:09,173 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:05:09,173 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 359 ms
+2022-12-06 17:05:09,204 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:05:09,209 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-8 - Starting...
+2022-12-06 17:05:12,133 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-8 - Start completed.
+2022-12-06 17:05:12,134 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:05:15,561 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:05:15,562 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:05:15,720 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:05:15,793 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:05:15,808 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:05:15,816 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 7.046 seconds (JVM running for 3639.801)
+2022-12-06 17:05:15,819 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:05:26,461 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:05:26,865 INFO  [Thread-31] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:05:26,872 INFO  [Thread-31] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:05:26,873 INFO  [Thread-31] com.zaxxer.hikari.HikariDataSource : HikariPool-8 - Shutdown initiated...
+2022-12-06 17:05:27,201 INFO  [Thread-31] com.zaxxer.hikari.HikariDataSource : HikariPool-8 - Shutdown completed.
+2022-12-06 17:05:27,322 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:05:27,323 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:05:27,607 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:05:27,633 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:05:27,733 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:05:27,734 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:05:27,734 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:05:27,767 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:05:27,767 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 441 ms
+2022-12-06 17:05:27,809 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:05:27,816 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-9 - Starting...
+2022-12-06 17:05:30,963 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-9 - Start completed.
+2022-12-06 17:05:30,963 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:05:34,360 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:05:34,361 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:05:34,537 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:05:34,643 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:05:34,655 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:05:34,660 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 7.384 seconds (JVM running for 3658.644)
+2022-12-06 17:05:34,661 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:05:54,511 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:05:54,913 INFO  [Thread-35] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:05:54,930 INFO  [Thread-35] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:05:54,932 INFO  [Thread-35] com.zaxxer.hikari.HikariDataSource : HikariPool-9 - Shutdown initiated...
+2022-12-06 17:05:54,960 INFO  [Thread-35] com.zaxxer.hikari.HikariDataSource : HikariPool-9 - Shutdown completed.
+2022-12-06 17:05:55,064 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:05:55,065 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:05:56,330 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:05:56,357 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:05:56,454 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:05:56,455 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:05:56,455 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:05:56,478 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:05:56,478 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1409 ms
+2022-12-06 17:05:56,518 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:05:56,522 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-10 - Starting...
+2022-12-06 17:05:59,433 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-10 - Start completed.
+2022-12-06 17:05:59,435 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:06:02,852 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:06:02,853 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:06:03,043 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:06:03,152 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:06:03,168 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:06:03,175 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 8.155 seconds (JVM running for 3687.16)
+2022-12-06 17:06:03,177 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:06:21,008 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:06:21,348 INFO  [Thread-39] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:06:21,366 INFO  [Thread-39] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:06:21,368 INFO  [Thread-39] com.zaxxer.hikari.HikariDataSource : HikariPool-10 - Shutdown initiated...
+2022-12-06 17:06:22,201 INFO  [Thread-39] com.zaxxer.hikari.HikariDataSource : HikariPool-10 - Shutdown completed.
+2022-12-06 17:06:22,315 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:06:22,316 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:06:22,815 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:06:22,836 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:06:22,922 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:06:22,923 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:06:22,923 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:06:22,945 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:06:22,945 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 626 ms
+2022-12-06 17:06:22,985 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:06:22,993 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-11 - Starting...
+2022-12-06 17:06:25,993 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-11 - Start completed.
+2022-12-06 17:06:25,994 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:06:29,401 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:06:29,402 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:06:29,594 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:06:29,721 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:06:29,744 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:06:29,752 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 7.477 seconds (JVM running for 3713.737)
+2022-12-06 17:06:29,754 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:06:35,266 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:06:35,709 INFO  [Thread-43] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:06:35,719 INFO  [Thread-43] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:06:35,721 INFO  [Thread-43] com.zaxxer.hikari.HikariDataSource : HikariPool-11 - Shutdown initiated...
+2022-12-06 17:06:36,487 INFO  [Thread-43] com.zaxxer.hikari.HikariDataSource : HikariPool-11 - Shutdown completed.
+2022-12-06 17:06:36,582 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:06:36,583 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:06:36,836 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:06:36,863 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:06:36,972 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:06:36,972 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:06:36,972 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:06:36,997 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:06:36,997 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 412 ms
+2022-12-06 17:06:37,041 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:06:37,048 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-12 - Starting...
+2022-12-06 17:06:39,965 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-12 - Start completed.
+2022-12-06 17:06:39,966 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:06:43,403 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:06:43,404 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:06:43,567 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:06:43,669 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:06:43,679 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:06:43,682 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 7.13 seconds (JVM running for 3727.667)
+2022-12-06 17:06:43,684 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:08:52,194 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:08:52,705 INFO  [Thread-47] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:08:52,721 INFO  [Thread-47] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:08:52,723 INFO  [Thread-47] com.zaxxer.hikari.HikariDataSource : HikariPool-12 - Shutdown initiated...
+2022-12-06 17:08:52,744 INFO  [Thread-47] com.zaxxer.hikari.HikariDataSource : HikariPool-12 - Shutdown completed.
+2022-12-06 17:08:52,835 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:08:52,835 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:08:54,069 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:08:54,096 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:08:54,238 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:08:54,239 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:08:54,239 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:08:54,261 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:08:54,261 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1423 ms
+2022-12-06 17:08:54,287 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:08:54,292 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-13 - Starting...
+2022-12-06 17:08:57,464 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-13 - Start completed.
+2022-12-06 17:08:57,465 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:09:00,897 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:09:00,898 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:09:01,082 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:09:01,184 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:09:01,194 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:09:01,199 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 8.396 seconds (JVM running for 3865.184)
+2022-12-06 17:09:01,202 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:10:56,560 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:10:56,960 INFO  [Thread-51] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:10:56,979 INFO  [Thread-51] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:10:56,981 INFO  [Thread-51] com.zaxxer.hikari.HikariDataSource : HikariPool-13 - Shutdown initiated...
+2022-12-06 17:10:57,007 INFO  [Thread-51] com.zaxxer.hikari.HikariDataSource : HikariPool-13 - Shutdown completed.
+2022-12-06 17:10:57,110 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:10:57,111 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:10:58,420 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:10:58,433 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:10:58,488 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:10:58,489 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:10:58,489 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:10:58,504 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:10:58,504 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1390 ms
+2022-12-06 17:10:58,532 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:10:58,535 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-14 - Starting...
+2022-12-06 17:11:01,713 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-14 - Start completed.
+2022-12-06 17:11:01,714 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:11:05,140 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:11:05,141 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:11:05,260 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:11:05,330 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:11:05,339 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:11:05,343 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 8.269 seconds (JVM running for 3989.327)
+2022-12-06 17:11:05,344 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:11:28,309 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (1 addition, 1 deletion, 3 modifications)
+2022-12-06 17:11:28,751 INFO  [Thread-55] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:11:28,765 INFO  [Thread-55] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:11:28,765 INFO  [Thread-55] com.zaxxer.hikari.HikariDataSource : HikariPool-14 - Shutdown initiated...
+2022-12-06 17:11:28,773 INFO  [Thread-55] com.zaxxer.hikari.HikariDataSource : HikariPool-14 - Shutdown completed.
+2022-12-06 17:11:28,896 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:11:28,896 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:11:30,254 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:11:30,273 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:11:30,348 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:11:30,349 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:11:30,349 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:11:30,371 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:11:30,372 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1474 ms
+2022-12-06 17:11:30,405 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:11:30,411 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-15 - Starting...
+2022-12-06 17:11:33,590 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-15 - Start completed.
+2022-12-06 17:11:33,591 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:11:37,042 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:11:37,043 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:11:37,211 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:11:37,296 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:11:37,304 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:11:37,308 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 8.466 seconds (JVM running for 4021.293)
+2022-12-06 17:11:37,310 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:13:13,034 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:13:13,326 INFO  [Thread-59] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:13:13,340 INFO  [Thread-59] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:13:13,341 INFO  [Thread-59] com.zaxxer.hikari.HikariDataSource : HikariPool-15 - Shutdown initiated...
+2022-12-06 17:13:13,351 INFO  [Thread-59] com.zaxxer.hikari.HikariDataSource : HikariPool-15 - Shutdown completed.
+2022-12-06 17:13:13,463 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:13:13,464 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:13:14,789 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:13:14,802 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:13:14,884 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:13:14,884 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:13:14,884 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:13:14,901 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:13:14,901 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1434 ms
+2022-12-06 17:13:14,942 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:13:14,950 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-16 - Starting...
+2022-12-06 17:13:18,112 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-16 - Start completed.
+2022-12-06 17:13:18,112 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:13:21,512 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:13:21,513 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:13:21,633 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:13:21,744 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:13:21,763 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:13:21,771 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 8.356 seconds (JVM running for 4125.755)
+2022-12-06 17:13:21,773 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:13:36,526 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (1 addition, 1 deletion, 3 modifications)
+2022-12-06 17:13:36,880 INFO  [Thread-63] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:13:36,886 INFO  [Thread-63] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:13:36,887 INFO  [Thread-63] com.zaxxer.hikari.HikariDataSource : HikariPool-16 - Shutdown initiated...
+2022-12-06 17:13:38,110 INFO  [Thread-63] com.zaxxer.hikari.HikariDataSource : HikariPool-16 - Shutdown completed.
+2022-12-06 17:13:38,223 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:13:38,224 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:13:39,683 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:13:39,695 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:13:39,761 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:13:39,762 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:13:39,762 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:13:39,792 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:13:39,792 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1565 ms
+2022-12-06 17:13:39,836 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:13:39,845 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-17 - Starting...
+2022-12-06 17:13:42,784 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-17 - Start completed.
+2022-12-06 17:13:42,785 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:13:46,216 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:13:46,217 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:13:46,369 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:13:46,463 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:13:46,483 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:13:46,494 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 8.308 seconds (JVM running for 4150.477)
+2022-12-06 17:13:46,495 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:15:20,100 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:15:20,375 INFO  [Thread-67] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:15:20,389 INFO  [Thread-67] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:15:20,391 INFO  [Thread-67] com.zaxxer.hikari.HikariDataSource : HikariPool-17 - Shutdown initiated...
+2022-12-06 17:15:20,397 INFO  [Thread-67] com.zaxxer.hikari.HikariDataSource : HikariPool-17 - Shutdown completed.
+2022-12-06 17:15:20,488 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:15:20,489 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:15:21,721 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:15:21,736 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:15:21,796 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:15:21,797 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:15:21,797 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:15:21,830 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:15:21,830 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1339 ms
+2022-12-06 17:15:21,858 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:15:21,862 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-18 - Starting...
+2022-12-06 17:15:25,042 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-18 - Start completed.
+2022-12-06 17:15:25,043 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:15:28,497 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:15:28,498 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:15:28,624 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:15:28,705 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:15:28,713 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:15:28,716 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 8.261 seconds (JVM running for 4252.701)
+2022-12-06 17:15:28,717 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:20:13,912 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:20:14,244 INFO  [Thread-71] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:20:14,287 INFO  [Thread-71] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:20:14,292 INFO  [Thread-71] com.zaxxer.hikari.HikariDataSource : HikariPool-18 - Shutdown initiated...
+2022-12-06 17:20:14,309 INFO  [Thread-71] com.zaxxer.hikari.HikariDataSource : HikariPool-18 - Shutdown completed.
+2022-12-06 17:20:14,491 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:20:14,492 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:20:15,061 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:20:15,075 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:20:15,147 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:20:15,148 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:20:15,148 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:20:15,163 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:20:15,164 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 669 ms
+2022-12-06 17:20:15,183 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:20:15,186 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-19 - Starting...
+2022-12-06 17:20:18,223 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-19 - Start completed.
+2022-12-06 17:20:18,224 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:20:21,647 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:20:21,647 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:20:21,736 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:20:21,798 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:20:21,808 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:20:21,816 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 7.363 seconds (JVM running for 4545.799)
+2022-12-06 17:20:21,817 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:23:28,443 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:23:28,671 INFO  [Thread-75] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:23:28,680 INFO  [Thread-75] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:23:28,681 INFO  [Thread-75] com.zaxxer.hikari.HikariDataSource : HikariPool-19 - Shutdown initiated...
+2022-12-06 17:23:28,686 INFO  [Thread-75] com.zaxxer.hikari.HikariDataSource : HikariPool-19 - Shutdown completed.
+2022-12-06 17:23:28,749 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:23:28,749 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:23:29,906 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:23:29,917 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:23:29,967 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:23:29,968 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:23:29,968 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:23:29,982 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:23:29,982 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1230 ms
+2022-12-06 17:23:30,004 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:23:30,007 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-20 - Starting...
+2022-12-06 17:23:32,962 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-20 - Start completed.
+2022-12-06 17:23:32,962 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:23:36,351 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:23:36,352 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:23:36,440 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:23:36,496 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:23:36,509 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:23:36,512 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 7.781 seconds (JVM running for 4740.497)
+2022-12-06 17:23:36,513 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:23:37,931 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:23:38,171 INFO  [Thread-79] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:23:38,177 INFO  [Thread-79] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:23:38,179 INFO  [Thread-79] com.zaxxer.hikari.HikariDataSource : HikariPool-20 - Shutdown initiated...
+2022-12-06 17:23:40,470 INFO  [Thread-79] com.zaxxer.hikari.HikariDataSource : HikariPool-20 - Shutdown completed.
+2022-12-06 17:23:40,557 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:23:40,557 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:23:40,697 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:23:40,707 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:23:40,754 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:23:40,755 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:23:40,755 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:23:40,768 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:23:40,768 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 208 ms
+2022-12-06 17:23:40,788 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:23:40,791 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-21 - Starting...
+2022-12-06 17:23:43,718 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-21 - Start completed.
+2022-12-06 17:23:43,719 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:23:47,154 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:23:47,154 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:23:47,247 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:23:47,303 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:23:47,312 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:23:47,317 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 6.799 seconds (JVM running for 4751.301)
+2022-12-06 17:23:47,317 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:24:15,331 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2022-12-06 17:24:15,574 INFO  [Thread-83] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:24:15,583 INFO  [Thread-83] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:24:15,584 INFO  [Thread-83] com.zaxxer.hikari.HikariDataSource : HikariPool-21 - Shutdown initiated...
+2022-12-06 17:24:15,589 INFO  [Thread-83] com.zaxxer.hikari.HikariDataSource : HikariPool-21 - Shutdown completed.
+2022-12-06 17:24:15,648 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:24:15,649 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:24:16,040 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:24:16,049 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:24:16,109 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:24:16,110 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:24:16,110 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:24:16,124 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:24:16,124 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 475 ms
+2022-12-06 17:24:16,144 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:24:16,148 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-22 - Starting...
+2022-12-06 17:24:19,083 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-22 - Start completed.
+2022-12-06 17:24:19,083 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:24:22,507 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:24:22,508 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:24:22,610 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:24:22,668 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:24:22,680 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:24:22,683 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 7.052 seconds (JVM running for 4786.667)
+2022-12-06 17:24:22,684 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:25:29,622 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:25:29,845 INFO  [Thread-87] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:25:29,856 INFO  [Thread-87] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:25:29,857 INFO  [Thread-87] com.zaxxer.hikari.HikariDataSource : HikariPool-22 - Shutdown initiated...
+2022-12-06 17:25:29,865 INFO  [Thread-87] com.zaxxer.hikari.HikariDataSource : HikariPool-22 - Shutdown completed.
+2022-12-06 17:25:29,934 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:25:29,934 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:25:30,057 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:25:30,069 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:25:30,119 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:25:30,120 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:25:30,120 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:25:30,133 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:25:30,133 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 198 ms
+2022-12-06 17:25:30,154 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:25:30,157 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-23 - Starting...
+2022-12-06 17:25:33,133 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-23 - Start completed.
+2022-12-06 17:25:33,133 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:25:36,484 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:25:36,484 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:25:36,566 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:25:36,616 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:25:36,625 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:25:36,628 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 6.714 seconds (JVM running for 4860.613)
+2022-12-06 17:25:36,630 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:25:50,340 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2022-12-06 17:25:50,614 INFO  [Thread-91] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:25:50,616 INFO  [Thread-91] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:25:50,616 INFO  [Thread-91] com.zaxxer.hikari.HikariDataSource : HikariPool-23 - Shutdown initiated...
+2022-12-06 17:25:53,043 INFO  [Thread-91] com.zaxxer.hikari.HikariDataSource : HikariPool-23 - Shutdown completed.
+2022-12-06 17:25:53,107 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:25:53,108 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:25:54,705 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:25:54,717 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:25:54,765 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:25:54,766 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:25:54,766 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:25:54,779 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:25:54,779 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1669 ms
+2022-12-06 17:25:54,796 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:25:54,800 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-24 - Starting...
+2022-12-06 17:25:57,712 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-24 - Start completed.
+2022-12-06 17:25:57,712 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:26:01,106 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:26:01,106 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:26:01,116 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'theaterController': Unsatisfied dependency expressed through field 'theaterService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'theaterServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.theatre.service.TheaterServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@501810c6]
+2022-12-06 17:26:01,116 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:26:01,116 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-24 - Shutdown initiated...
+2022-12-06 17:26:02,775 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-24 - Shutdown completed.
+2022-12-06 17:26:02,776 INFO  [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:26:02,784 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-06 17:26:02,843 ERROR [restartedMain] org.springframework.boot.SpringApplication : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'theaterController': Unsatisfied dependency expressed through field 'theaterService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'theaterServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.theatre.service.TheaterServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@501810c6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.5.jar:2.7.5]
+	at com.theatre.TheaterApplication.main(TheaterApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.5.jar:2.7.5]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'theaterServiceImpl': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.theatre.service.TheaterServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@501810c6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.theatre.service.TheaterServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@501810c6]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 37 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: UserAlreadyExistException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.23.jar:5.3.23]
+	... 39 common frames omitted
+Caused by: java.lang.ClassNotFoundException: UserAlreadyExistException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:398) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.5.jar:2.7.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 43 common frames omitted
+2022-12-06 17:26:15,561 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:26:15,561 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:26:16,473 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:26:16,473 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:26:16,522 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:26:16,522 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:26:16,522 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:26:16,539 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:26:16,539 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 978 ms
+2022-12-06 17:26:16,573 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:26:16,573 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-25 - Starting...
+2022-12-06 17:26:19,488 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-25 - Start completed.
+2022-12-06 17:26:19,489 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:26:22,883 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:26:22,883 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:26:22,986 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:26:23,034 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2022-12-06 17:26:23,044 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8091 (http) with context path '/theater'
+2022-12-06 17:26:23,048 INFO  [restartedMain] com.theatre.TheaterApplication : Started TheaterApplication in 7.498 seconds (JVM running for 4907.032)
+2022-12-06 17:26:23,049 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-06 17:27:44,365 INFO  [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-06 17:27:44,613 INFO  [Thread-95] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:27:44,628 INFO  [Thread-95] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:27:44,629 INFO  [Thread-95] com.zaxxer.hikari.HikariDataSource : HikariPool-25 - Shutdown initiated...
+2022-12-06 17:27:44,639 INFO  [Thread-95] com.zaxxer.hikari.HikariDataSource : HikariPool-25 - Shutdown completed.
+2022-12-06 17:27:44,706 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37856 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:27:44,706 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:27:45,789 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:27:45,802 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:27:45,864 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:27:45,865 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:27:45,865 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:27:45,879 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:27:45,879 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1170 ms
+2022-12-06 17:27:45,899 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:27:45,903 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-26 - Starting...
+2022-12-06 17:27:48,876 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-26 - Start completed.
+2022-12-06 17:27:48,876 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:29:23,165 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 37272 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:29:23,166 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:29:23,215 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-06 17:29:23,215 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-06 17:29:23,815 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:29:23,875 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:29:24,422 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:29:24,437 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:29:24,437 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:29:24,524 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:29:24,525 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1308 ms
+2022-12-06 17:29:24,716 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:29:24,811 INFO  [restartedMain] org.hibernate.Version : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-06 17:29:25,024 INFO  [restartedMain] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-06 17:29:25,124 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2022-12-06 17:29:28,573 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2022-12-06 17:29:28,609 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:29:32,933 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:29:32,967 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:29:33,463 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'theaterController': Unsatisfied dependency expressed through field 'theaterService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'theaterServiceImpl': Unsatisfied dependency expressed through field 'theaterDTOMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.theatre.mapper.TheaterDTOMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-12-06 17:29:33,464 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:29:33,468 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2022-12-06 17:29:33,703 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2022-12-06 17:29:33,705 INFO  [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-12-06 17:29:33,717 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-06 17:29:33,741 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field theaterDTOMapper in com.theatre.service.TheaterServiceImpl required a bean of type 'com.theatre.mapper.TheaterDTOMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.theatre.mapper.TheaterDTOMapper' in your configuration.
+
+2022-12-06 17:33:29,473 INFO  [restartedMain] com.theatre.TheaterApplication : Starting TheaterApplication using Java 11.0.15 on GBLNB-PG034KM0 with PID 39472 (C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters\target\classes started by kkamath in C:\Users\kkamath\Downloads\GalaxEFinalBackend\theaters)
+2022-12-06 17:33:29,474 INFO  [restartedMain] com.theatre.TheaterApplication : The following 1 profile is active: "dev"
+2022-12-06 17:33:29,512 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-06 17:33:29,513 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-06 17:33:30,139 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 17:33:30,195 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+2022-12-06 17:33:30,730 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8091 (http)
+2022-12-06 17:33:30,747 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-12-06 17:33:30,748 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-06 17:33:30,847 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/theater] : Initializing Spring embedded WebApplicationContext
+2022-12-06 17:33:30,847 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1333 ms
+2022-12-06 17:33:31,080 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-06 17:33:31,189 INFO  [restartedMain] org.hibernate.Version : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-06 17:33:31,431 INFO  [restartedMain] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-06 17:33:31,558 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2022-12-06 17:33:35,039 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2022-12-06 17:33:35,080 INFO  [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-12-06 17:33:40,180 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-06 17:33:40,190 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 17:33:40,714 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 17:33:41,056 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729

@@ -8,7 +8,7 @@ import javax.persistence.FetchType;
 import javax.persistence.criteria.Fetch;
 import javax.persistence.criteria.From;
 
-// import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 
 //springframework imports
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.theatre.dto.TheaterDTO;
 //project imports
 import com.theatre.entity.Address;
 import com.theatre.entity.Row;
@@ -31,8 +32,8 @@ import com.theatre.entity.Seat;
 import com.theatre.entity.SeatBooking;
 import com.theatre.entity.Theater;
 import com.theatre.exception.NoContentException;
-import com.theatre.exception.UserAlreadyExistException;
-import com.theatre.exception.UserNotFoundException;
+import com.theatre.exception.TheaterAlreadyExistException;
+import com.theatre.exception.TheaterNotFoundException;
 import com.theatre.service.TheaterService;
 
 // Controller --> ServiceImpl [Service]
@@ -56,7 +57,7 @@ public class TheaterController {
 	*/
 	
 	@GetMapping("/All")
-	public ResponseEntity<List<Theater>> GET() {
+	public ResponseEntity<List<TheaterDTO>> GET() {
 		
 	/*
 	 * 	Pseudo Code
@@ -65,9 +66,9 @@ public class TheaterController {
 	 * 		3. if Successful send proper response with response code
 	 * 		3. Catch and send proper Response Code																					
 	 */
-		ResponseEntity<List<Theater>> responseEntity;
+		ResponseEntity<List<TheaterDTO>> responseEntity;
 		try{
-			responseEntity = new ResponseEntity<List<Theater>>(theaterService.getTheaters(), HttpStatus.OK);
+			responseEntity = new ResponseEntity<List<TheaterDTO>>(theaterService.getTheaters(), HttpStatus.OK);
 //			theaterLogger.info("Successful Retrieval of Theater Details");			
 		}
 		catch (NoContentException e) {
@@ -89,7 +90,7 @@ public class TheaterController {
 	 *  	POST : "http://localhost:9090/theater"
 	*/
 	@PostMapping
-	public ResponseEntity<String> POST(@RequestBody Theater theater) {
+	public ResponseEntity<String> POST(@RequestBody TheaterDTO theater) {
 		
 		/*
 		 * 	Pseudo Code
@@ -105,7 +106,7 @@ public class TheaterController {
 			responseEntity = new ResponseEntity<String>(theaterService.validateAndSaveTheater(theater),HttpStatus.OK);
 //			theaterLogger.info("Theater Data has been successfully stored");
 		}
-		catch (UserAlreadyExistException e) {
+		catch (TheaterAlreadyExistException e) {
 			responseEntity = new ResponseEntity<String>(e.getCode()+" : "+e.getMessage(), HttpStatus.OK);
 			//theaterLogger.info(e.getCode()+" : "+e.getMessage());
 		}
@@ -124,13 +125,23 @@ public class TheaterController {
 	*/
 	
 	@PutMapping("/update")
-public ResponseEntity<String> UPDATE(@RequestBody Theater theater) {
+public ResponseEntity<String> UPDATE(@RequestBody TheaterDTO theater) {
+		
+		/*
+		 * 	Pseudo Code
+		 * 		1. Create Response Entity Object
+		 * 		2. Try update theaters through Service Implementation
+		 * 		3. if Successful send proper response with response code
+		 * 		4. Catch and send proper Response Code																					
+		 */
+		
+		
 	    ResponseEntity<String> responseEntity;	
 		try {
 			responseEntity = new ResponseEntity<String>(theaterService.validateAndUpdateTheater(theater),HttpStatus.OK);
 			//theaterLogger.info("Theater Data has been successfully stored");
 			}
-		catch (UserNotFoundException e) 
+		catch (TheaterNotFoundException e) 
 			{
 			responseEntity = new ResponseEntity<String>(e.getCode()+" : "+e.getMessage(), HttpStatus.OK);
 			//theaterLogger.error(e.getCode()+" : "+e.getMessage());
@@ -144,29 +155,32 @@ public ResponseEntity<String> UPDATE(@RequestBody Theater theater) {
 }
 
 	
-	
-	//	 performing deletion of inactive theaters using theatre name.
+	/*
+	 * |--------API to delete Theater Data into Database--------|
+	 * Call : 
+	 *  	PUT : "http://localhost:9090/theater/{name}"
+	*/
 	@DeleteMapping("{name}")
 	public ResponseEntity<String> DELETE(@PathVariable("name") String name) {
+		/*
+		 * 	Pseudo Code
+		 * 		1. Create Response Entity Object
+		 * 		2. Try deleting theaters through Service Implementation
+		 * 		3. if Successful send proper response with response code
+		 * 		4. Catch and send proper Response Code																					
+		 */
 		ResponseEntity<String> responseEntity;
-		Theater theaterdetails = theaterService.findByname(name);
-
-//		checking whether the theater is empty or not(if empty id=-1 if theater is present id will be fetched from the database)
+		TheaterDTO theaterdetails = theaterService.findByname(name);
 		int id = -1;
 		if (theaterdetails != null) {
 			id = theaterdetails.getId();
 		}
-
-		
-//         checking whether the id exists in the database or not
 		if (id!=-1 && theaterService.isIdExists(id)) {
-//        	 deletion function is activated.
 			String message = theaterService.deleteTheater(id);
 			responseEntity = new ResponseEntity<String>(message, HttpStatus.OK);
 		} else {
-//        	 deletion function is not activated No content is returned..
 			String errorMessage = "Theater with this ID doesnt Exists";
-			responseEntity = new ResponseEntity<String>(errorMessage, HttpStatus.NO_CONTENT);
+			responseEntity = new ResponseEntity<String>(errorMessage, HttpStatus.BAD_REQUEST);
 		}
 		return responseEntity;
 	}
@@ -174,14 +188,26 @@ public ResponseEntity<String> UPDATE(@RequestBody Theater theater) {
 
 	
 
-//	 performing get theater by city operation
+	/*
+	 * |--------API to find theater by city--------|
+	 * Call : 
+	 *  	PUT : "http://localhost:9090/theater/city/{city}"
+	*/
 @GetMapping("city/{city}")
 public ResponseEntity<?> GETBYCITY(@PathVariable("city") String city) {
-	List<Theater> theatres = new ArrayList<Theater>();
+	/*
+	 * 	Pseudo Code
+	 * 		1. Create Response Entity Object
+	 * 		2. Try find theaters by city through Service Implementation
+	 * 		3. if Successful send proper response with response code
+	 * 		4. Catch and send proper Response Code																					
+	 */
+	
+	List<TheaterDTO> theatres = new ArrayList<TheaterDTO>();
 	ResponseEntity<?> responseEntity;
 	try {
 		theatres = theaterService.getByCity(city);
-		responseEntity = new ResponseEntity<List<Theater>>(theatres, HttpStatus.OK);
+		responseEntity = new ResponseEntity<List<TheaterDTO>>(theatres, HttpStatus.OK);
 		//theaterLogger.info("Theater Data has been successfully displayed");
 		}
 	catch(NoContentException e) {
@@ -197,19 +223,30 @@ public ResponseEntity<?> GETBYCITY(@PathVariable("city") String city) {
 
 
 	
-	//	performing get theater by name
+/*
+ * |--------API to find theater by name--------|
+ * Call : 
+ *  	PUT : "http://localhost:9090/theater/name/{name}"
+*/
 	@GetMapping("name/{name}")
 
 
 
-	   public ResponseEntity<List<Theater>> GETBY(@PathVariable("name") String name) {
-	        
-			List<Theater> theaterServiceTheaters = new ArrayList<Theater>();
-	        ResponseEntity<List<Theater>> responseEntity;
+	   public ResponseEntity<List<TheaterDTO>> GETBY(@PathVariable("name") String name) {
+		
+		/*
+		 * 	Pseudo Code
+		 * 		1. Create Response Entity Object
+		 * 		2. Try find theaters by name through Service Implementation
+		 * 		3. if Successful send proper response with response code
+		 * 		4. Catch and send proper Response Code																					
+		 */
+			List<TheaterDTO> theaterServiceTheaters = new ArrayList<TheaterDTO>();
+	        ResponseEntity<List<TheaterDTO>> responseEntity;
 	        try{
-	        	Theater theater_i = theaterService.validateAndFind(name);
+	        	TheaterDTO theater_i = theaterService.validateAndFind(name);
 	        	theaterServiceTheaters.add(theater_i);	            
-	        	responseEntity = new ResponseEntity<List<Theater>>(theaterServiceTheaters, HttpStatus.OK);
+	        	responseEntity = new ResponseEntity<List<TheaterDTO>>(theaterServiceTheaters, HttpStatus.OK);
 	            //theaterLogger.info("Successful Retrieval of Theater Details");            
 	        }
 	        catch (NoContentException e) {
@@ -227,14 +264,24 @@ public ResponseEntity<?> GETBYCITY(@PathVariable("city") String city) {
 	
 
 	
-	
-	//	perfoming get operation to get the details of the theater using address field.
-	@GetMapping("searchByAddress/{input}")
-    public  ResponseEntity<List<Theater>>GETTHEATERBYADDRESS(@PathVariable("input") String input)throws NoContentException {
-//    fetching the list of theaters using the theater field
-		ResponseEntity<List<Theater>> responseEntity;
+	/*
+	 * |--------API to find theater by address--------|
+	 * Call : 
+	 *  	PUT : "http://localhost:9090/theater/address/{input}"
+	*/
+	@GetMapping("address/{input}")
+    public  ResponseEntity<List<TheaterDTO>>GETTHEATERBYADDRESS(@PathVariable("input") String input)throws NoContentException {
+		/*
+		 * 	Pseudo Code
+		 * 		1. Create Response Entity Object
+		 * 		2. Try find theaters by address through Service Implementation
+		 * 		3. if Successful send proper response with response code
+		 * 		4. Catch and send proper Response Code																					
+		 */
+
+		ResponseEntity<List<TheaterDTO>> responseEntity;
 		try{
-			responseEntity = new ResponseEntity<List<Theater>>(theaterService.getByAddress(input), HttpStatus.OK);
+			responseEntity = new ResponseEntity<List<TheaterDTO>>(theaterService.getByAddress(input), HttpStatus.OK);
 			//theaterLogger.info("Successful Retrieval of Theater Address");			
 		}
 		catch (NoContentException e) {

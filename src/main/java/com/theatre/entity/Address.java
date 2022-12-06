@@ -16,6 +16,9 @@ import lombok.Data;
 @Table(name="address")
 @Data
 @Component
+/*
+ * Address Entity
+ */
 public class Address {
 	
 	@Id

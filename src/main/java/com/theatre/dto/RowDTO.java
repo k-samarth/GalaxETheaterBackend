@@ -9,6 +9,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+/*
+ * DTO For Row Entity
+ */
 public class RowDTO {
 
 	private String code;

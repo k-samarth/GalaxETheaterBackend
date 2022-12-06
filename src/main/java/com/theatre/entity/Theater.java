@@ -24,6 +24,9 @@ import lombok.Data;
 @Table(name="theatre")
 @Component
 @CrossOrigin("*")
+/*
+ * Theater Entity
+ */
 public class Theater {
 	
 	@Id

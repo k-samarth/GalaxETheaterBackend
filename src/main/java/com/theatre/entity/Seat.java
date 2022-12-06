@@ -17,6 +17,9 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @Table(name="seat")
+/*
+ * Seat Entity
+ */
 public class Seat {
         @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)

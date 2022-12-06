@@ -7,6 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+/*
+ * DTO For Address Entity
+ */
 public class AddressDTO {
 
 	private String city;

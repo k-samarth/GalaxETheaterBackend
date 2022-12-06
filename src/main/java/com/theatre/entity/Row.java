@@ -20,6 +20,9 @@ import lombok.Data;
 @Table(name="TheatreRow")
 @Data
 @Component
+/*
+ * Row Entity
+ */
 public class Row {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
