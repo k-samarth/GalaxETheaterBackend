@@ -18,8 +18,12 @@ public interface TheaterRepository extends JpaRepository<Theater, Integer>{
 	public List<Theater> findByCity(@Param("city") String city);
 		
 //	getting list of theaters through theater name
-	@Query("From Theater t where t.name like :name%")
+
 	public  Theater findByName(String name);
+	
+//	getting list of theaters through theater name
+	@Query("From Theater t where t.name like :name%")
+	public  List<Theater> filterByName(String name);
 	
 	
 	
@@ -28,7 +32,3 @@ public interface TheaterRepository extends JpaRepository<Theater, Integer>{
     public List<Theater> findByAddress(@Param("input")String input);
 	
 }
-
-	
- 
-

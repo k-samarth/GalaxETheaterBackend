@@ -242,9 +242,9 @@ public List<TheaterDTO> getByCity(String city) throws NoContentException {
 		TheaterDTO theaterDto = theaterDTOMapper.convertToDto(theater);
 		return theaterDto;
 	}
-public TheaterDTO validateAndFind(String name) throws NoContentException {
+public List<TheaterDTO> validateAndFind(String name) throws NoContentException {
         
-        TheaterDTO theaterDetails = findByname(name);
+        List<TheaterDTO> theaterDetails = filterByname(name);
         if(theaterDetails == null) {
             throw new NoContentException("No theater available","DB000");
      }
@@ -273,4 +273,18 @@ public TheaterDTO validateAndFind(String name) throws NoContentException {
             }
     	
     }
+
+	@Override
+	public List<TheaterDTO> filterByname(String name) throws NoContentException {
+		// TODO Auto-generated method stub
+		List<Theater> theaters = theaterRepository.filterByName(name);
+		List<TheaterDTO> theatersDto = theaterlistDTOMapper.convertToDto(theaters);
+		
+		if (theaters.isEmpty()) {
+			throw new NoContentException("All theaters are currently unavailable", "DB001");
+		} else {
+			return theatersDto;
+		}
+	
+	}
 }

@@ -8,7 +8,7 @@ import javax.persistence.FetchType;
 import javax.persistence.criteria.Fetch;
 import javax.persistence.criteria.From;
 
-//import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;	
 
 //springframework imports
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,7 +56,7 @@ public class TheaterController {
 	 *  	GET : "http://localhost:9090/theater/All"
 	*/
 	
-	@GetMapping("/All")
+	@GetMapping("/all")
 	public ResponseEntity<List<TheaterDTO>> GET() {
 		
 	/*
@@ -244,9 +244,9 @@ public ResponseEntity<?> GETBYCITY(@PathVariable("city") String city) {
 			List<TheaterDTO> theaterServiceTheaters = new ArrayList<TheaterDTO>();
 	        ResponseEntity<List<TheaterDTO>> responseEntity;
 	        try{
-	        	TheaterDTO theater_i = theaterService.validateAndFind(name);
-	        	theaterServiceTheaters.add(theater_i);	            
-	        	responseEntity = new ResponseEntity<List<TheaterDTO>>(theaterServiceTheaters, HttpStatus.OK);
+	        	List<TheaterDTO> theater_i = theaterService.validateAndFind(name);
+	        		            
+	        	responseEntity = new ResponseEntity<List<TheaterDTO>>(theater_i, HttpStatus.OK);
 	            //theaterLogger.info("Successful Retrieval of Theater Details");            
 	        }
 	        catch (NoContentException e) {
